@@ -3,30 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Before The Law</title>
+    <title>Before the Law</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
+            background-image: url('gate2.png'); /* Replace 'gate_watercolor.jpg' with your image file */
+            background-size: cover;
+            background-position: center;
             font-family: 'Lucida Console', monospace;
-            background-color: #333; /* Dark gray background */
-            color: #fff; /* White text color */
-            text-align: center;
-            margin: 0;
-            padding: 0;
+            color: white; /* Change font color as per your image background */
         }
         .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent white container background */
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
         }
-
+        h1 {
+            font-family: 'Lucida Console', monospace;
+            font-size: 4em; /* Adjust font size as needed */
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.5em; /* Adjust font size as needed */
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .start-button {
+            font-family: 'Lucida Console', monospace;
+            font-size: 1.5em; /* Adjust font size as needed */
+            background-color: white;
+            color: black;
+            border: 2px solid black;
+            padding: 10px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .start-button:hover {
+            background-color: black;
+            color: white;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Before The Law Experience <a href="page2.html">&#10084;</a></h1>
+        <h1>Before the Law</h1>
+        <p>This is a web experience inspired by Franz Kafka's piece Before the Law. Enjoy.</p>
+        <a href="p1.html" class="start-button">Start</a>
+        <audio src="eerie_music.mp3" autoplay loop></audio>
     </div>
 </body>
 </html>
