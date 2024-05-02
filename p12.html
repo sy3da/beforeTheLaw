@@ -9,12 +9,11 @@
         body {
             margin: 0;
             padding: 0;
-            background-image: url('gk_l.png'); /* Replace 'man_on_road.jpg' with your image file */
+            background-image: url('fruits_money.png'); /* Replace 'man_on_road.jpg' with your image file */
             background-size: cover;
             background-position: center;
             font-family: 'Lucida Console', monospace;
-            background-color: black;
-            color: black; /* Set font color to white */
+            color: white; /* Set font color to white */
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
@@ -26,12 +25,9 @@
             opacity: 0; /* Initially hide the container */
         }
         #scene-description {
-            font-size: 18px; /* Adjust font size as needed */
-            text-align: left;
-            margin-bottom: 30px;
-            flex-direction: row;
-            width: 75vh;
-            color: white;
+            font-size: 20px; /* Adjust font size as needed */
+            text-align: center;
+            margin-bottom: 20px;
         }
         .navigation-buttons {
             display: flex;
@@ -47,40 +43,12 @@
             text-decoration: none;
             transition: background-color 0.3s, color 0.3s;
         }
-        .talk-button {
-            font-size: 1.5em; /* Adjust font size as needed */
-            flex-direction: row;
-            background-color: rgb(226, 231, 212);
-            color: black;
-            border: 2px solid black;
-            padding: 5px 10px; /* Adjust padding as needed */
-            text-decoration: none;
-            transition: background-color 0.3s, color 0.3s;
-            margin-bottom: 300px;
-        }
-        .talk-button:hover {
-            background-color: black;
-            color: white;
-        }
         .navigation-button:hover {
             background-color: black;
             color: white;
         }
         .return-button {
             background-color: yellow; /* Change background color to yellow */
-        }
-        .talk {
-            display: flex;
-            justify-content: left;
-            margin-left: 70px;
-            margin-bottom: 100px;
-            flex-direction: row;
-            color: black;
-            overflow: hidden;
-        }
-        @keyframes typing {
-            from { width: 0 }
-            to { width: 100% }
         }
 
         /* Define fade-in animation */
@@ -91,23 +59,18 @@
     </style>
 </head>
 <body>
+   
     <div class="container">
         <p id="scene-description">
-            <I>Hello, sir. I am from here. Can I gain into the law, please? </I>
-            <p style="color:white">-you ask him. </p>
+            <I>You gather your most valuable things and buy the best fruits and foods, and head back over to the gate the next day.</I> 
         </p>
-        <div class="talk">
-            <a href="p5.html" class="talk talk-button"> <I> > </I></a>
-        </div>
-        <a href="p3.html" class="navigation-button">Go back</a>
         <div class="navigation-buttons">
             <a href="p0.html" class="navigation-button return-button">Return to Start</a>
+            <a href="p13.html" class="navigation-button">Next ></a>
         </div>
+
     </div>
-    <audio controls autoplay> <source src="eerie_music.mp3" type= "audio/mp3"> </audio>
+    <audio id="aud"controls autoplay> <source src="eerie_music.mp3" type= "audio/mp3"> </audio>
 </body>
 </html>
-
-    
-
 
